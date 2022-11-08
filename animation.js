@@ -1,6 +1,13 @@
+/*
+Animation Credit: 
+Animation Name: Volcanic ash
+Author: Dmitri Kolytchev 
+Platform: Codepen
+*/
+
 "use strict";
 
-// background animation
+// Background animation
 (function () {
   var Base,
     Particle,
