@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Poppins:wght@300;400;500;600&family=Sora:wght@600&display=swap");
+
+@tailwind base;
+@tailwind components;
+
+input::-webkit-search-cancel-button {
+  @apply invert cursor-pointer;
+
+}
+.bg-custom-color {
+  background: linear-gradient(#000000 50%, #f2aa4c 50%);
+  /* background: linear-gradient(#000000 50%, #FFD700 50%); */
+}
+.genre-div {
+  @apply mb-2 px-4 py-2 border-[1px] border-gray-500 rounded-3xl font-normal text-xs text-[#f2aa4cff];
+}
+@tailwind utilities;

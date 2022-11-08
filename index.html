@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmingg - Movie Database</title>
+    <link rel="icon" type="image/x-icon" href="./logo.ico" />
+  </head>
+  <body class="text-white bg-black font-poppins">
+    <main class="min-h-screen flex justify-center items-center">
+      <canvas id="bg" class="m-0 p-0 w-full h-full absolute"></canvas>
+      <div
+        class="container my-4 mx-auto px-10 pt-10 pb-3 w-11/12 max-w-2xl relative rounded-md shadow-lg shadow-black/50 bg-white/5 border-2 border-white/10 backdrop-blur-lg"
+      >
+        <div class="search-box flex">
+          <input
+            class="w-9/12 p-3 text-sm xsm:text-base rounded-md border-none bg-white/5 text-white focus:outline-none focus:ring-1 focus:ring-[#C8C8C8] placeholder:font-normal placeholder:text-gray-400 caret-[#C8C8C8]"
+            type="search"
+            placeholder="Search for a movie..."
+            id="movie-name"
+            autocomplete="off"
+          />
+          <button
+            class="ml-5 w-3/12 flex justify-center items-center outline-none border-none rounded-md text-black font-medium bg-[#C8C8C8] cursor-pointer"
+            id="search-btn"
+          >
+            <span class="xsm:hidden"
+              ><img src="./search.svg" alt="Search" class="w-6"
+            /></span>
+            <span class="hidden xsm:inline text-sm xsm:text-base">Search</span>
+          </button>
+        </div>
+
+        <div id="result" class="mt-4 text-white z-50"></div>
+        <div
+          class="credit mt-3 flex justify-center items-center flex-wrap text-xs sm:text-sm text-gray-400 opacity-80"
+        >
+          <a
+            class="hover:text-white"
+            href="https://github.com/s4shibam/Filmingg-Movie-Database"
+            target="_blank"
+            >Filmingg</a
+          >
+          &nbsp;by&nbsp;
+          <span
+            class="text-sm sm:text-base hover:text-[#f2aa4cff] hover:opacity-100"
+          >
+            <a href="https://www.linkedin.com/in/s4shibam" target="_blank">
+              Shibam Saha
+            </a>
+          </span>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./apikey.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./animation.js"></script>
+  </body>
+</html>
+
+<!-- Developed with love by Shibam Saha -->
