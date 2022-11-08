@@ -4,12 +4,12 @@ import "./style.css";
 // Import API KEY
 import apiKey from "./apiKey.js";
 
-
 // Import required files
 import imageNotFound from "./public/image_not_found.png";
 import starImage from "./public/star.png";
 
 // Declare variables
+let x = apiKey.length;
 let posterImage = null;
 let movieNameRef = document.getElementById("movie-name");
 let searchBtn = document.getElementById("search-btn");
@@ -18,7 +18,10 @@ let result = document.getElementById("result");
 // Function to fetch data from API
 let getMovie = () => {
   let movieName = movieNameRef.value;
-  let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${apiKey}`;
+  let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${apiKey.substring(
+    1,
+    x
+  )}`;
 
   if (movieName.length <= 0) {
     result.innerHTML = `<div class="msg my-6 text-xl sm:text-2xl text-center text-white">Enter a valid Movie name!</div>`;
