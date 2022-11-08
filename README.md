@@ -7,6 +7,7 @@
 - In the backend the site collects the data from the OMDB API in JSON format and organizes the important data and presents it to the user.
 - The application shows significant data in a structured way using DOM Manipulation.
 - It also allows to redirect to the Google search result for the given valid details if the Poster image is clicked.
+- Beautiful background animation used for better user experience. [Credit](https://codepen.io/Fata-ku/pen/GRJRaj)
 
 **Tech Stack**
 
