@@ -2,7 +2,8 @@
 import "./style.css";
 
 // Import API KEY
-import apiKey from "./apiKey.js";
+// import apiKey from "./apiKey.js";
+const apiKey = process.env.apiKey;
 
 // Import required files
 import imageNotFound from "./public/image_not_found.png";
