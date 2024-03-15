@@ -1,8 +1,8 @@
 // Import CSS File
 import "./style.css";
 
-// Import API KEY
-import apiKey from "./apiKey.js";
+// API KEY
+const apiKey = import.meta.env.VITE_API_KEY 
 
 // Import required files
 import imageNotFound from "./public/image_not_found.png";
@@ -18,10 +18,7 @@ let result = document.getElementById("result");
 // Function to fetch data from API
 let getMovie = () => {
   let movieName = movieNameRef.value;
-  let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${apiKey.substring(
-    1,
-    x
-  )}`;
+  let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${apiKey}`;
 
   if (movieName.length <= 0) {
     result.innerHTML = `<div class="msg my-6 text-xl sm:text-2xl text-center text-white">Enter a valid Movie name!</div>`;
